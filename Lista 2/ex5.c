@@ -1,7 +1,7 @@
 #include <stdio.h>
     
 int main(){
-    int x=10, p, y=0;
+    int x, p, y=0, z;
     int v[100];
     int r[100];
     char resp;
@@ -10,11 +10,23 @@ int main(){
     if(resp=='s'){
         printf("Quantos valores o vetor vai possuir?\n");
         scanf("%d", &p);
+        
     }
-    else{}
-    for(p = p; p>=0; p--)
-    for(x = 0; x<=p; x++){
-        v[x]=r[y];
+    else{
+        p = 10;
+    }
+        
+    for(z = 0 ; z<p; z++){
+        printf("Digite um valor para v[%d]\n", z);
+        scanf("%d", &v[z]);
+        x++;
+    }
+    
+    for(x = p-1; x>=0; x--){
+        r[y]=v[x];
         y++;
+    }
+    for(z = 0 ; z<p; z++){
+    printf("v[%d]=%d \n", z,r[z]);
     }
 }
