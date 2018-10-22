@@ -6,5 +6,5 @@ int main(){
     for(r = 0; n>0; n--){
         r = r + 1/n;
     }
-    printf("O resultado eh aproximadamente %.2f \n", r);
+    printf("O resultado eh aproximadamente  %.2f \n", r); 
 }
