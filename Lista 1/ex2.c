@@ -13,7 +13,7 @@ int main(){
     while(n1>0){
         nf=nf * n1;
         n1 = n1-1;
-        printf("O fatorial eh %ld\n", nf);}
+        printf("O fatorial eh %ld\n", nf);}p
     }
     
     printf("Deseja continuar? (s/n)\n");
