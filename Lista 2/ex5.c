@@ -2,8 +2,8 @@
     
 int main(){
     int x, p, y=0, z;
-    int v[100];
-    int r[100];
+    int v[1000000];
+    int r[1000000];
     char resp;
     printf("Deseja alterar o numero de elementos do vetor? (No momento possui 10 elementos) s/n\n");
     scanf(" %c", &resp);
@@ -26,7 +26,9 @@ int main(){
         r[y]=v[x];
         y++;
     }
+    printf("vetor ao contrario : {");
     for(z = 0 ; z<p; z++){
-    printf("v[%d]=%d \n", z,r[z]);
+    printf(" %d ;", r[z]);
     }
+    printf("}\n");
 }
